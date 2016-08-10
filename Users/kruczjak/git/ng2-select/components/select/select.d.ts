@@ -1,28 +1,33 @@
 import { EventEmitter, ElementRef, OnInit } from '@angular/core';
+import { ControlValueAccessor } from '@angular/forms';
 import { SelectItem } from './select-item';
 import { OptionsBehavior } from './select-interfaces';
-export declare class SelectComponent implements OnInit {
+export declare class SelectComponent implements OnInit, ControlValueAccessor {
     allowClear: boolean;
     placeholder: string;
-    initData: Array<any>;
+    idField: string;
+    textField: string;
     multiple: boolean;
     items: Array<any>;
     disabled: boolean;
+    active: Array<any>;
     data: EventEmitter<any>;
     selected: EventEmitter<any>;
     removed: EventEmitter<any>;
     typed: EventEmitter<any>;
     options: Array<SelectItem>;
     itemObjects: Array<SelectItem>;
-    active: Array<SelectItem>;
     activeOption: SelectItem;
     element: ElementRef;
+    protected onChange: any;
+    protected onTouched: any;
     private inputMode;
     private optionsOpened;
     private behavior;
     private inputValue;
     private _items;
     private _disabled;
+    private _active;
     constructor(element: ElementRef);
     inputEvent(e: any, isUpMode?: boolean): void;
     ngOnInit(): any;
@@ -30,6 +35,9 @@ export declare class SelectComponent implements OnInit {
     doEvent(type: string, value: any): void;
     clickedOutside(): void;
     firstItemHasChildren: boolean;
+    writeValue(val: any): void;
+    registerOnChange(fn: (_: any) => {}): void;
+    registerOnTouched(fn: () => {}): void;
     protected matchClick(e: any): void;
     protected mainClick(event: any): void;
     protected selectActive(value: SelectItem): void;
