@@ -1,5 +1,5 @@
 {
-  "name": "ng2-select",
+  "name": "ng2-select-kruczjak",
   "version": "1.0.3",
   "description": "Angular2 based replacement for select boxes",
   "scripts": {
@@ -40,7 +40,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/valor-software/ng2-select.git"
+    "url": "git+ssh://git@github.com/kruczjak/ng2-select.git"
   },
   "bugs": {
     "url": "https://github.com/valor-software/ng2-select/issues"
