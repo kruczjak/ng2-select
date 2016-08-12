@@ -1,6 +1,6 @@
 {
   "name": "ng2-select-kruczjak",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Angular2 based replacement for select boxes",
   "scripts": {
     "flow.install:typings": "./node_modules/.bin/typings install",
