@@ -1,6 +1,6 @@
 {
   "name": "ng2-select-kruczjak",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Angular2 based replacement for select boxes",
   "scripts": {
     "flow.install:typings": "./node_modules/.bin/typings install",
@@ -47,9 +47,9 @@
   },
   "homepage": "https://github.com/valor-software/ng2-select#readme",
   "peerDependencies": {
-    "@angular/common": "^2.0.0-rc.1",
-    "@angular/compiler": "^2.0.0-rc.1",
-    "@angular/core": "^2.0.0-rc.1"
+    "@angular/common": "^2.0.0-rc.5",
+    "@angular/compiler": "^2.0.0-rc.5",
+    "@angular/core": "^2.0.0-rc.5"
   },
   "dependencies": {},
   "devDependencies": {
